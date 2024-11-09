@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutvu Meeskonnaga</title>
+    <link rel="stylesheet" href="tutvustus.css">
+</head>
+<body>
+    <header>
+        <h1>Tutvu Meeskonnaga</h1>
+    </header>
+    <div class="nav-bar">
+        <ul>
+            <li class="nav-box"><a class="nav-text">AVALEHT</a></li>
+            <li class="nav-box"><a class="nav-text">SAAME TUTTAVAKS</a></li>
+        </ul>
+    </div>
+    <main>
+        <div class="profile" onclick="toggleInfo(this)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Bill_Gates_July_2014.jpg" alt="bill värav" class="profile-pic">
+            <div class="profile-info">
+                <h2>Pildi test</h2>
+                <p><strong>Positsioon:</strong> libero(ainukene mida mäletan)</p>
+                <p class="more-info">
+                    <strong>Tutvustus:</strong> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non dolere, inquam, istud quam vim habeat postea videro; Eam stabilem appellas. Recte, inquit, intellegis. Sed quid sentiat, non videtis. Quodsi ipsam honestatem undique pertectam atque absolutam. Duo Reges: constructio interrete. Quod quidem iam fit etiam in Academia.
+
+                    Sed ad haec, nisi molestum est, habeo quae velim. An eiusdem modi? Idemne, quod iucunde? Certe non potest.
+
+                    Omnia contraria, quos etiam insanos esse vultis. Et non ex maxima parte de tota iudicabis? Certe non potest. Suo genere perveniant ad extremum; Proclivi currit oratio. Iam id ipsum absurdum, maximum malum neglegi.
+
+                    Negat enim summo bono afferre incrementum diem. Hic ambiguo ludimur. Bork Scrupulum, inquam, abeunti;
+
+                    Praeclare hoc quidem. Stoicos roga. Quis istud, quaeso, nesciebat? Sed quot homines, tot sententiae; Sed residamus, inquit, si placet. Quid enim est a Chrysippo praetermissum in Stoicis? Quae ista amicitia est?
+                </p>
+            </div>
+        </div>
+        <div class="profile" onclick="toggleInfo(this)">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="nimi" class="profile-pic">
+            <div class="profile-info">
+                <h2>Nimi</h2>
+                <p><strong>Positsioon:</strong> Treener</p>
+                <p class="more-info">
+                    <strong>Tutvustus:</strong> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non dolere, inquam, istud quam vim habeat postea videro; Eam stabilem appellas. Recte, inquit, intellegis. Sed quid sentiat, non videtis. Quodsi ipsam honestatem undique pertectam atque absolutam. Duo Reges: constructio interrete. Quod quidem iam fit etiam in Academia.
+
+                    Sed ad haec, nisi molestum est, habeo quae velim. An eiusdem modi? Idemne, quod iucunde? Certe non potest.
+
+                    Omnia contraria, quos etiam insanos esse vultis. Et non ex maxima parte de tota iudicabis? Certe non potest. Suo genere perveniant ad extremum; Proclivi currit oratio. Iam id ipsum absurdum, maximum malum neglegi.
+
+                    Negat enim summo bono afferre incrementum diem. Hic ambiguo ludimur. Bork Scrupulum, inquam, abeunti;
+
+                    Praeclare hoc quidem. Stoicos roga. Quis istud, quaeso, nesciebat? Sed quot homines, tot sententiae; Sed residamus, inquit, si placet. Quid enim est a Chrysippo praetermissum in Stoicis? Quae ista amicitia est?
+                </p>
+            </div>
+        </div>
+        <!-- Lisa rohkem profiile vastavalt vajadusele -->
+    </main>
+    <script>
+        function toggleInfo(element) {
+            var info = element.querySelector('.more-info');
+            if (info.classList.contains('expanded')) {
+                info.classList.remove('expanded');
+                element.style.maxHeight = '150px'; // Adjust based on your initial box height
+            } else {
+                info.classList.add('expanded');
+                element.style.maxHeight = element.scrollHeight + 'px';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+
+body {
+    font-family: Ebrima, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {                        /* Pealkiri */
+    background-color: #a9b093;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+                                /* copy-pase home.ccs'ist :) */
+.nav-bar {
+    margin-left: 10rem; /* 15 */
+    margin-right: 10rem; /* 15 */
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    /*border: solid black 2px;*/
+    position: static;
+
+}
+.nav-box {
+    list-style-type: none;
+    display: inline;
+    border-right: solid black;
+    border-left: solid black;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.nav-text {
+    font-family: Corbel, serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.nav-text:hover {
+    color: grey;
+    font-size: 17px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+main {                          /* Teksti jaoks */
+    padding: 2rem;
+}
+
+table {                         /* Tabeli stiilid */
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Väike shadow */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {                        /* Table info joondus */
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {                            /* Tablei headeri stiil */
+    background-color: #a9b093; 
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+tr:nth-child(even) {        /* Iga järgmine rida veits teist värvi, et paremini arusaada */
+    background-color: #f2f2f2;
+}
+
+tr:hover {                  /* Tablei hover effekt */
+    background-color: #e0e0e0;
+}
+
+a {                         /* Võtab lingi joone ära */
+    text-decoration: none;
+}
+
+.social-icon {              /* Ikooni stiil */
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    border-radius: 20%;
+}
