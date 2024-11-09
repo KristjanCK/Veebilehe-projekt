@@ -1,0 +1,44 @@
+.banner {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    border: solid black 2px;
+
+    max-height: 236px;
+    overflow: hidden;
+}
+.banner-text {
+    flex: 1;
+    font-family: Ebrima, serif;
+    color: #000000;
+    text-align: center;
+}
+a {
+    color: #000000;
+    text-decoration: none; /* Remove default underline */
+}
+.nav-bar {
+    margin-left: 10rem; /* 15 */
+    margin-right: 10rem; /* 15 */
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    border: solid black 2px;
+
+}
+.nav-box {
+    list-style-type: none;
+    display: inline;
+    border-right: solid black;
+    border-left: solid black;
+    margin-left: 5rem; /* 15 */
+    margin-right: 5rem; /* 15 */
+}
+.nav-text {
+    font-family: Corbel, serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.nav-text:hover {
+    color: grey;
+}
