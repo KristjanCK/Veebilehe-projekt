@@ -2,23 +2,26 @@
 <html lang="et">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutvu Meeskonnaga</title>
-    <link rel="stylesheet" href="tutvustus.css">
+    <title>Tutvustus</title>
+    <link rel="stylesheet" type="text/css" href="tutvustus.css">
 </head>
 <body>
-    <header>
-        <h1>Tutvu Meeskonnaga</h1>
-    </header>
+    <div class="banner">
+        <div class="banner-text">
+            <a href="tutvustus.html" style="text-decoration: none">
+                <h1>TUTVUSTUS</h1>
+            </a>
+        </div>
+    </div>
     <div class="nav-bar">
         <ul>
             <li class="nav-box"><a class="nav-text">AVALEHT</a></li>
-            <li class="nav-box"><a class="nav-text">SAAME TUTTAVAKS</a></li>
+            <li class="nav-box"><a class="nav-text">HAKKA TOETAJAKS</a></li>
         </ul>
     </div>
     <main>
         <div class="profile" onclick="toggleInfo(this)">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Bill_Gates_July_2014.jpg" alt="bill värav" class="profile-pic">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="pilt" class="profile-pic">
             <div class="profile-info">
                 <h2>Pildi test</h2>
                 <p><strong>Positsioon:</strong> libero(ainukene mida mäletan)</p>
@@ -37,7 +40,7 @@
             </div>
         </div>
         <div class="profile" onclick="toggleInfo(this)">
-            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="nimi" class="profile-pic">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="pilt" class="profile-pic">
             <div class="profile-info">
                 <h2>Nimi</h2>
                 <p><strong>Positsioon:</strong> Treener</p>
@@ -58,13 +61,13 @@
         <!-- Lisa rohkem profiile vastavalt vajadusele -->
     </main>
     <script>
-        function toggleInfo(element) {
-            var info = element.querySelector('.more-info');
-            if (info.classList.contains('expanded')) {
+        function toggleInfo(element) { // Laseb vajutades pikendada teksti kasti
+            var info = element.querySelector('.more-info'); // Valib elemendi mille klass on 'more-info'
+            if (info.classList.contains('expanded')) { // Kui 'more-info' klassil on juba 'expanded' klass siis eemaldab selle kui vajutada selle
                 info.classList.remove('expanded');
-                element.style.maxHeight = '150px'; // Adjust based on your initial box height
+                element.style.maxHeight = '150px';
             } else {
-                info.classList.add('expanded');
+                info.classList.add('expanded'); // Kui 'more-info'l ei ole 'expanded' klassi siis lisab selle kui peale vajutada
                 element.style.maxHeight = element.scrollHeight + 'px';
             }
         }
