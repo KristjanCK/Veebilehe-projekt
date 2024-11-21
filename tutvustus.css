@@ -116,3 +116,27 @@ main {
 .more-info.expanded::after {
     display: none;
 }
+.banner {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    /*border: solid black 2px;*/
+    background-color: #a9b093;
+    max-height: 236px;
+    overflow: hidden;
+    margin-left: 1rem; /* 15 */
+    margin-right: 1rem; /* 15 */
+    margin-top: 1rem;
+}
+.banner-text {
+    flex: 1;
+    font-family: Ebrima, serif;
+    text-align: center;
+}
+h1{
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
