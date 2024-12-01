@@ -1,24 +1,23 @@
-
-// Select the sliding text element
+// Valib liugteksti element
 const slidingText = document.getElementById('slidingText');
 
-// Set initial position
-let position = window.innerWidth; // Start just outside the right edge
+// Määrab algpositsioon
+let position = window.innerWidth; // Alustab just väljaspool paremat serva
 slidingText.style.left = position + 'px';
 
-// Animate the text
+// Animeerib teksti
 function slideText() {
-    position -= 3; // Move left by 2px
+    position -= 3; // Liigub vasakule 3px võrra
     slidingText.style.left = position + 'px';
 
-    // Reset position when the text is fully off-screen
+    // Lähtestab positsioon, kui tekst on täielikult ekraanilt väljas
     if (position + slidingText.offsetWidth < 10) {
-        position = window.innerWidth; // Reset to start just outside the right edge
+        position = window.innerWidth; // Lähtestab, et alustada just väljaspool paremat serva
     }
 
-    // Continue animation
+    // Jätkake animatsiooni
     requestAnimationFrame(slideText);
 }
 
-// Start the animation
+// Alustab animatsiooni
 slideText();
