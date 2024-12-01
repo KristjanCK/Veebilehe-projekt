@@ -1,39 +1,59 @@
 .banner {
-    position: sticky;
+    place-self: center;
     display: flex;
     align-items: center;
     /*border: solid black 2px;*/
-    background-color: #a9b093;
+    /*background-color: #a9b093;*/
     max-height: 236px;
-    overflow: hidden;
-    margin-left: 1rem; /* 15 */
-    margin-right: 1rem; /* 15 */
-    margin-top: 1rem;
+    width: 100%;
+
 }
+.bg{
+    background-image: url("parem_pilt.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: -100;
+}
+.banner-nav{
+    top: 0;
+    position: sticky;
+    left: 0;
+    margin-top: -15rem;
+
+
+}
+
+
 .banner-text {
     flex: 1;
     font-family: Ebrima, serif;
     text-align: center;
-}
-a {
-    color: #000000;
-    text-decoration: none; /* Remove default underline */
+    font-size: 20px;
+
 }
 .nav-bar {
     margin-left: 10rem; /* 15 */
     margin-right: 10rem; /* 15 */
-    margin-top: 1rem;
+    margin-top: -1rem;
     display: flex;
+    height: auto;
+    width: auto;
+    place-self: center;
     justify-content: center;
-    /*border: solid black 2px;*/
-    position: static;
-
+    padding: 10px 16px;
+    color: #f1f1f1;
 }
+
 .nav-box {
     list-style-type: none;
     display: inline;
-    border-right: solid black;
-    border-left: solid black;
+    border-right: solid #ffffff;
+    border-left: solid #ffffff;
     margin-left: 5rem;
     margin-right: 5rem;
 }
@@ -41,13 +61,15 @@ a {
     font-family: Corbel, serif;
     margin-left: 1rem;
     margin-right: 1rem;
+    color: white;
+    font-size: 18px;
 }
 .nav-text:hover {
     color: grey;
-    font-size: 17px;
     transition: 1s;
     cursor: pointer;
 }
+
 
 .image {
     display: block;
@@ -59,7 +81,7 @@ a {
     width: 720px;
     max-width: 100%;
     height: auto;
-    border: solid black 2px;
+    /*border: solid black 2px;*/
 }
 
 .content {
@@ -67,20 +89,28 @@ a {
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
 }
 
 .left_container {
+
     flex: 1;
     margin-top: 1rem;
     padding: 5px;
     width: auto;
+    margin-right: 30rem;
     /*border: solid black 2px;*/
+    justify-items: center;
+    margin-bottom: 50px;
 }
 
 .right_container {
     flex: 1;
+
     margin-top: 1rem;
     padding: 2px;
+    justify-items: center;
     /*border: solid black 2px; */
 }
 
@@ -91,6 +121,7 @@ h2{
     margin-top: 0;
     text-align: center;
     font-family: Ebrima, serif;
+    color: #1e1f22;
 }
 h1{
     color: #ffffff;
@@ -100,10 +131,44 @@ a{
     color: black;
 }
 tr{
-    text-align: left;
+    font-size: 19px;
+    font-family: Corbel, serif;
+
 }
 td {
     padding-left: 25px;
-    padding-bottom: 7px;
-    text-align: right;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    /*border-bottom: solid black 1px;*/
 }
+th{
+    font-weight: normal;
+
+
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 7%;
+    background-color: #000000;
+    color: white;
+}
+.footer-text{
+    text-align: center;
+    margin-top: 1rem;
+    font-family: Ebrima, serif;
+    word-spacing: 50px;
+}
+#slidingText {
+    white-space: nowrap; /* Prevent text wrapping */
+    position: relative;
+}
+main {
+    padding-top: 100px; /* Prevent content from hiding under navbar */
+    background: #EDE7D9;
+}
+
+

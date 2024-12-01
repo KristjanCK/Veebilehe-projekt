@@ -3,7 +3,7 @@ body {
     font-family: Ebrima, serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: #EDE7D9;
 }
 
 header {                        /* Pealkiri */
@@ -11,36 +11,6 @@ header {                        /* Pealkiri */
     color: #fff;
     padding: 1rem;
     text-align: center;
-}
-                                /* copy-pase home.ccs'ist :) */
-.nav-bar {
-    margin-left: 10rem; /* 15 */
-    margin-right: 10rem; /* 15 */
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    /*border: solid black 2px;*/
-    position: static;
-
-}
-.nav-box {
-    list-style-type: none;
-    display: inline;
-    border-right: solid black;
-    border-left: solid black;
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-.nav-text {
-    font-family: Corbel, serif;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.nav-text:hover {
-    color: grey;
-    font-size: 17px;
-    transition: 1s;
-    cursor: pointer;
 }
 
 
@@ -91,21 +61,64 @@ a {                         /* Võtab lingi joone ära */
     border-radius: 20%;
 }
 .banner {
-    position: sticky;
+    place-self: center;
     display: flex;
     align-items: center;
     /*border: solid black 2px;*/
-    background-color: #a9b093;
+    /*background-color: #a9b093;*/
     max-height: 236px;
-    overflow: hidden;
-    margin-left: 1rem; /* 15 */
-    margin-right: 1rem; /* 15 */
-    margin-top: 1rem;
+    width: 100%;
+
 }
+.banner-nav{
+    top: 0;
+    position: sticky;
+    left: 0;
+
+
+
+}
+
+
 .banner-text {
     flex: 1;
     font-family: Ebrima, serif;
     text-align: center;
+    font-size: 20px;
+
+}
+.nav-bar {
+    margin-left: 10rem; /* 15 */
+    margin-right: 10rem; /* 15 */
+    margin-top: -1rem;
+    display: flex;
+    height: auto;
+    width: auto;
+    place-self: center;
+    justify-content: center;
+    padding: 10px 16px;
+    color: #f1f1f1;
+}
+
+.nav-box {
+    list-style-type: none;
+    display: inline;
+    border-right: solid #ffffff;
+    border-left: solid #ffffff;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.nav-text {
+    font-family: Corbel, serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white;
+    font-size: 18px;
+}
+.nav-text:hover {
+    color: grey;
+    transition: 1s;
+    cursor: pointer;
 }
 h1{
     color: #ffffff;
