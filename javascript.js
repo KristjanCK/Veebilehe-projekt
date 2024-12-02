@@ -1,5 +1,5 @@
 
-// Select the sliding text element
+// selle osa on koostanud ja kommenteerinud ChatGPT
 const slidingText = document.getElementById('slidingText');
 
 // Set initial position
@@ -22,3 +22,14 @@ function slideText() {
 
 // Start the animation
 slideText();
+
+function toggleInfo(element) {
+    var info = element.querySelector('.more-info');
+    if (info.classList.contains('expanded')) {
+        info.classList.remove('expanded');
+        element.style.maxHeight = '150px'; // Adjust based on your initial box height
+    } else {
+        info.classList.add('expanded');
+        element.style.maxHeight = element.scrollHeight + 'px';
+    }
+}

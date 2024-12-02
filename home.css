@@ -24,8 +24,6 @@
     position: sticky;
     left: 0;
     margin-top: -15rem;
-
-
 }
 
 
@@ -99,7 +97,6 @@
     margin-top: 1rem;
     padding: 5px;
     width: auto;
-    margin-right: 30rem;
     /*border: solid black 2px;*/
     justify-items: center;
     margin-bottom: 50px;
@@ -107,7 +104,6 @@
 
 .right_container {
     flex: 1;
-
     margin-top: 1rem;
     padding: 2px;
     justify-items: center;
@@ -163,12 +159,22 @@ th{
     word-spacing: 50px;
 }
 #slidingText {
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: nowrap;
     position: relative;
 }
 main {
-    padding-top: 100px; /* Prevent content from hiding under navbar */
-    background: #EDE7D9;
+    padding-top: 100px;
+    background: #a9b093;
+}
+iframe{
+
+    width: 900px;
+    height: 500px;
+    margin-top: 100px;
+    justify-content: center;
+}
+body{
+    margin: 0;
 }
 
 
