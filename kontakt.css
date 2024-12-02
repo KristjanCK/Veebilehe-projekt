@@ -68,13 +68,10 @@ a {                         /* Võtab lingi joone ära */
 }
 .banner-nav{
     top: 0;
-    position: sticky;
+    position: static;
     left: 0;
 
-
-
 }
-
 
 .banner-text {
     flex: 1;
@@ -112,7 +109,7 @@ a {                         /* Võtab lingi joone ära */
     font-size: 18px;
 }
 .nav-text:hover {
-    color: grey;
+    color: #ececec;
     transition: 1s;
     cursor: pointer;
 }
@@ -141,4 +138,75 @@ a{
 #slidingText {
     white-space: nowrap;
     position: relative;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 315px;
+    border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 315px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    color: #4a4a4a;
+}
+
+/* Caption text */
+.text {
+    color:white;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+img{
+    width: 35%;
+    margin-bottom: 30px;
+
 }
